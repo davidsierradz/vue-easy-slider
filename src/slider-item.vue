@@ -123,6 +123,10 @@ export default {
     this.speed = this.$parent.speed
     this.animation = this.$parent.animation
   },
+
+  updated () {
+    this.$emit('updated', this);
+  },
 }
 </script>
 
